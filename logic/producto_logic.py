@@ -1,14 +1,14 @@
 from core.pyba_logic import PybaLogic
 
 
-class CityLogic(PybaLogic):
+class ProductoLogic(PybaLogic):
     def __init__(self):
         super().__init__()
 
     # get
-    def getCityById(self, id):
+    def getProductoById(self, id):
         database = self.createDatabaseObj()
-        sql = f"SELECT * FROM world.city where ID={id};"
+        sql = f"SELECT * FROM bdapi.producto where ID={id};"
         result = database.executeQuery(sql)
         if len(result) != 0:
             return result[0]
@@ -16,7 +16,7 @@ class CityLogic(PybaLogic):
             return {}
 
     # post
-    def getCityByCountryCode(self, countryCode):
+"""  def getCityByCountryCode(self, countryCode):
         database = self.createDatabaseObj()
         sql = f"SELECT * FROM world.city where CountryCode='{countryCode}';"
         result = database.executeQuery(sql)
@@ -24,4 +24,4 @@ class CityLogic(PybaLogic):
             return result
         else:
             return []
-            
+"""
