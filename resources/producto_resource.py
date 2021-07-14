@@ -19,10 +19,8 @@ class Producto(Resource):
         result = self.logic.getProductoById(id)
         return result, 200
 
-"""
+
     def post(self, id):
-        productoDict = self.logic.getProductoById(id)
-        countryCode = productoDict["CountryCode"]
-        result = self.logic.getCityByCountryCode(countryCode)
+        productoDict = self.logic.getAllProductos()
+        result = productoDict
         return result, 200
-"""

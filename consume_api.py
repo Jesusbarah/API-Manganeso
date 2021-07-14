@@ -1,14 +1,14 @@
 import requests
 
-response = requests.get("http://localhost:23512/producto/1")
+"""response = requests.get("http://localhost:23512/producto/1")
 print(response)
 if response.status_code == 200:
     dataJson = response.json()
     print(dataJson)
+"""
 
-""" response = requests.post("http://localhost:23512/city/645")
+response = requests.post("http://localhost:23512/producto/0")
 print(response)
 if response.status_code == 200:
     dataJson = response.json()
-    print(dataJson) """
-
+    print(dataJson)

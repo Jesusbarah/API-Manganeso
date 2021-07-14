@@ -18,12 +18,12 @@ class ProductoLogic(PybaLogic):
             return {}
 
     # post
-"""  def getCityByCountryCode(self, countryCode):
+    def getAllProductos(self):
         database = self.createDatabaseObj()
-        sql = f"SELECT * FROM world.city where CountryCode='{countryCode}';"
+        sql = (f"SELECT inventario.id, producto.nombre, producto.categoria, producto.precio, inventario.talla, inventario.inventario, producto.imagen"
+        + " FROM bdapi.inventario JOIN bdapi.producto ON inventario.idproducto = producto.id;")
         result = database.executeQuery(sql)
         if len(result) != 0:
             return result
         else:
             return []
-"""
