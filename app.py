@@ -7,5 +7,6 @@ api = Api(app)
 
 api.add_resource(Producto, "/producto/<int:id>")
 
+
 if __name__ == "__main__":
     app.run(debug=True, port=23512)
