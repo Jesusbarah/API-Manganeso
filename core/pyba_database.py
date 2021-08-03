@@ -5,7 +5,7 @@ class PybaDatabase:
     def __init__(self):
         """self.host = "localhost"
         self.port = 3306
-        self.user = "b2e778b178ec8c"
+        self.user = "root"
         self.password = "12345"
         self.database = "bdapi"
         self.connection = self.createConnection()
@@ -13,7 +13,7 @@ class PybaDatabase:
         """
         self.host = "us-cdbr-east-04.cleardb.com"
         self.port = 3306
-        self.user = "root"
+        self.user = "b2e778b178ec8c"
         self.password = "8da5f053"
         self.database = "heroku_2ad2c093e75dcff"
         self.connection = self.createConnection()
