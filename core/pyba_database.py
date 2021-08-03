@@ -5,7 +5,7 @@ class PybaDatabase:
     def __init__(self):
         """self.host = "localhost"
         self.port = 3306
-        self.user = "root"
+        self.user = "b2e778b178ec8c"
         self.password = "12345"
         self.database = "bdapi"
         self.connection = self.createConnection()
