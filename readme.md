@@ -12,7 +12,7 @@ En la presente RestAPI, se ofrece una compilación de datos sobre bikinis de la 
 - Inventario
 - Imagen
 
-Para poder hacer uso de estos, se debe accesar a la URL "https://api-manganeso.herokuapp.com/" utilizando un endpoint construido como "producto/id", donde <int:id> corresponde al ID del producto requerido. Sin embargo, para su correcto funcionamiento, se debe tomar en consideración los siguientes apartados:
+Para poder hacer uso de estos, se debe accesar a la URL "https://api-manganeso.herokuapp.com/" utilizando un endpoint construido como "producto/id", donde "id" (un número entero) corresponde al ID del producto requerido. Sin embargo, para su correcto funcionamiento, se debe tomar en consideración los siguientes apartados:
 
 ### Método GET
 (Método default en la URL). Este método regresa toda la información contenida en la base de datos. Es decir, retorna una lista de diccionarios con cada producto del catálogo completo de bikinis y accesorios. Para utilizarlo, se debe tomar en cuenta lo siguiente dentro de su código de programación: 
