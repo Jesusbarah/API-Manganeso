@@ -5,11 +5,11 @@ class ProductoLogic(PybaLogic):
     def __init__(self):
         super().__init__()
 
-    # get
+    # post
     def getProductoById(self, id):
         database = self.createDatabaseObj()
         sql = (f"SELECT inventario.id, producto.nombre, producto.categoria, producto.precio, inventario.talla, inventario.inventario, producto.imagen"
-        + " FROM bdapi.inventario JOIN bdapi.producto ON inventario.idproducto = producto.id"
+        + " FROM inventario JOIN producto ON inventario.idproducto = producto.id"
         + f" WHERE inventario.id = {id};")
         result = database.executeQuery(sql)
         if len(result) != 0:
@@ -17,11 +17,11 @@ class ProductoLogic(PybaLogic):
         else:
             return {}
 
-    # post
+    # get
     def getAllProductos(self):
         database = self.createDatabaseObj()
         sql = (f"SELECT inventario.id, producto.nombre, producto.categoria, producto.precio, inventario.talla, inventario.inventario, producto.imagen"
-        + " FROM bdapi.inventario JOIN bdapi.producto ON inventario.idproducto = producto.id;")
+        + " FROM inventario JOIN producto ON inventario.idproducto = producto.id;")
         result = database.executeQuery(sql)
         if len(result) != 0:
             return result
