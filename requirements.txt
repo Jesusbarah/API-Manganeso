@@ -1,3 +1,4 @@
-PyMySQL
 Flask
+flask-restful
+PyMySQL
 gunicorn
